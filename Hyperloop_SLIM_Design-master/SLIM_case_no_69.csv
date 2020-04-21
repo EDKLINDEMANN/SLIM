@@ -1,0 +1,32 @@
+Variable,Value,Units,Dependencies,line_reference
+Srated,0.1,-,"Design Parameter/Constant",
+bymax,1.3,Tesla,"Design Parameter/Constant",
+btmax,1.6,Tesla,"Design Parameter/Constant",
+Ws,3.1416,m,"Design Parameter/Constant",
+Vs,200,m/s,"Vr,Srated",146
+Vr,180,m/s,"Design Parameter/Constant",
+p,1,-,"Design Parameter/Constant",
+tau,2.5,m,"Vs,f",147
+lamda,0.277777777777778,m,"tau,m,q1",148
+Ls,2.5,m,"p,tau",149
+Fsprime,4000,N,"Design Parameter/Constant",
+Nc,3,-,"k",211
+N1,9,-,"p,q1,Nc",212
+gauge,8,AWG,"(see loop counter)",231
+Dw,2.588,mm,"gauge",244
+Np,100,-,"(see loop counter)",231
+ws,0.261,m,"Dw,Np",246
+wt,0.0167777777777778,m,"lambda,ws",247
+wtmin,0.00312838465171903,m,"m,kw,N1,Im,mu0,lambda,p,ge,btmax",277
+hs,0.00863775999426318,m,"Asws",164
+hy,0.0220607061214775,m,"m,kw,N1,Im,mu0,Ls,pi,p,ge,bymax",280
+Fs(Vr),2843.26174445716,N,"m,i1(e),R2,slip,G,vel_sta",327
+Pout(Vr),505318.908593761,W,"Force(e),vel_rot(e)",328
+Pin(Vr),585296.99107498,W,"out_pow(e),m,i2(e),R2,m,i1(e),R1",329
+eta(Vr),0.863354700774512,-,"out_pow(e),in_pow(e)",330
+I1(Vr),1278.58232637455,A,"V1,Z(i)",189
+J1,2430581.96780821,A/m^2,"Design Parameter/Constant",
+Tlw,17582.4,m,"m,Np,lw",346
+Wcopper,828.71383845186,kg,"rhocopper,Vcopper",352
+Wiron,1395.84193283963,kg,"rhoiron,Viron",351
+Wstator,2224.55577129149,kg,"Wcopper,Wiron",353
